@@ -1,0 +1,157 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Roboto, sans-serif;
+
+}
+
+:root {
+    --main: #3F3D56;
+    --secundary: #323730;
+}
+
+.title {
+    color: var(--main);
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label-field {
+    color: var(--secundary);
+    margin-bottom: 6px;
+    margin-top: 30px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secundary);
+}
+
+#email-field, #password-field {
+    width: 515px;
+    height: 48px;
+    box-sizing: border-box;
+
+
+    color: var(--secundary);
+
+    padding: 5px 10px;
+    border: 1px inner #ABB3A8;
+    
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.checkbox-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 400;
+
+
+}
+
+.terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1px inner #ABB3A8;
+}
+
+.keep-contact {
+    margin-left: 8px;
+    
+}
+
+.link {
+    color: #1DB9E0;
+}
+
+.account {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secundary);
+}
+
+.button {
+    box-sizing: border-box;
+    background-color: var(--main);
+    color: white;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    width: 514px;
+    height: 47px;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    transition-duration: 300ms;
+    cursor: pointer;
+
+    animation-name: button;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+.button:hover {
+    background-color: #252333;
+    filter:brightness(1.20);
+    animation-duration: 10s;
+
+    
+}
+
+@keyframes title {
+    from {
+        transform: scaleX(0%);
+    }
+    to {
+        transform: scaleX(70%);
+    }
+    0% {
+        background-color: #f72d70;
+    }
+    50% {
+        background-color: #1DB9E0;
+
+    }
+    100% {
+        background-color: #21f52c;
+    }
+}
+
+.title {
+    animation-name: title;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    animation-duration: 850ms;
+    
+}
+
+@keyframes button {
+    from {
+        transform: scaleX(70%);
+    }
+    to {
+        transform: scaleX(100%);
+    }
+}
+
